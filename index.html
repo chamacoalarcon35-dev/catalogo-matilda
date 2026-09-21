@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MATILDA | Boutique Femenina • Catálogo Digital</title>
+  
+  <meta name="description" content="Catálogo digital de moda femenina MATILDA. Descubre corsets de diseño, chalecos sastre, bodys y tops delicados con atención personalizada por WhatsApp." />
+  <meta property="og:title" content="MATILDA | Boutique Femenina • Catálogo Digital" />
+  <meta property="og:description" content="Colección exclusiva de moda femenina. Consulta referencias, colores y disponibilidad al instante por WhatsApp." />
+  <meta property="og:image" content="assets/images/branding/logo-matilda.png" />
+  <meta property="og:type" content="website" />
+  
+  <link rel="icon" type="image/png" href="assets/images/branding/logo-matilda.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER BOUTIQUE ================= -->
+  <header class="header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <a href="#" class="brand-link" aria-label="MATILDA Boutique Femenina - Inicio">
+          <img src="assets/images/branding/logo-matilda.png" alt="MATILDA Logo" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-text-block">
+            <span class="brand-title">MATILDA</span>
+            <span class="brand-tagline">Boutique Femenina</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="header-nav" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#catalogo" class="nav-link">Prendas</a></li>
+          <li><a href="#sobre-matilda" class="nav-link">Sobre MATILDA</a></li>
+          <li><a href="#encuentranos" class="nav-link">Encuéntranos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Botón Configurar WhatsApp -->
+        <button id="btnConfigWhatsApp" class="icon-btn" title="Configurar número de WhatsApp" aria-label="Configurar WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+
+        <!-- Botón Contacto WhatsApp Oficial (wa.link/5y71ui) -->
+        <a id="headerWhatsAppBtn" href="https://wa.link/5y71ui" target="_blank" rel="noopener noreferrer" class="action-btn btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO / PRESENTACIÓN ================= -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-pill">
+          <span>Colección Boutique • Temporada 2026</span>
+        </div>
+        <h1 class="hero-title">Elegancia Femenina con Detalles Coquetos</h1>
+        <p class="hero-subtitle">
+          Prendas confeccionadas con siluetas estilizadoras, tejidos nobles y acabados de autor. Encuentra tu estilo y consulta al instante con nuestras asesoras por WhatsApp.
+        </p>
+        <div class="hero-badges">
+          <div class="hero-badge-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Fotografías 100% Reales</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Atención Directa: wa.link/5y71ui</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Tienda Física en Cúcuta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORÍAS DINÁMICAS ================= -->
+    <section class="categories-section" aria-label="Categorías de prendas">
+      <div id="categoriesContainer" class="categories-container">
+        <!-- Renderizado dinámico desde JS -->
+      </div>
+    </section>
+
+    <!-- ================= BARRA DE BÚSQUEDA Y FILTROS ================= -->
+    <section class="toolbar-section">
+      <div class="toolbar-wrapper">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Buscar por prenda, referencia (ej: MAT-COR-001) o color..."
+            aria-label="Buscar productos"
+          />
+          <button id="searchClearBtn" class="search-clear-btn" aria-label="Limpiar búsqueda">&times;</button>
+        </div>
+
+        <button id="filterBtnTrigger" class="filter-btn-trigger">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          <span>Filtros</span>
+          <span id="filterBadge" class="filter-badge" style="display: none;">0</span>
+        </button>
+
+        <div class="results-meta">
+          <span id="resultsCount">Cargando catálogo...</span>
+          <div id="activeFiltersContainer" class="active-filters-chips"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GRID DE PRODUCTOS ================= -->
+    <section id="catalogo" class="catalog-section" aria-label="Catálogo de productos">
+      <div id="productsGrid" class="products-grid">
+        <!-- Renderizado dinámico desde JS con aspecto 3:4 uniforme -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= VISTA DE PRODUCTO INDIVIDUAL ================= -->
+  <div id="productModalBackdrop" class="product-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="product-detail-card">
+      <div class="product-detail-header">
+        <button id="backToCatalogBtn" class="back-to-catalog-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Volver al catálogo</span>
+        </button>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Cerrar producto">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="product-detail-body">
+        <!-- Columna Izquierda: Imagen Principal (3:4) -->
+        <div class="product-detail-media">
+          <div class="detail-main-image-container">
+            <img id="detailMainImage" src="" alt="" class="detail-main-image" />
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Información Completa y Acciones -->
+        <div class="product-detail-info">
+          <span id="detailCategoryBadge" class="detail-category-badge">CATEGORÍA</span>
+          <h2 id="detailTitle" class="detail-title">Nombre de la Prenda</h2>
+          
+          <div class="detail-ref-row">
+            <span id="detailRef" class="detail-ref">Ref. MAT-000</span>
+            <span id="detailAvailability" class="detail-availability-badge">Disponible</span>
+          </div>
+
+          <div class="detail-price-row">
+            <span id="detailPrice" class="detail-price">$0</span>
+            <span class="detail-price-badge">COP</span>
+          </div>
+
+          <!-- Color -->
+          <div class="option-block">
+            <span class="option-label">Color: <span id="detailColorName" class="option-value-hint">Color</span></span>
+            <div class="color-option-display">
+              <span id="detailColorSwatch" class="color-swatch"></span>
+              <span class="color-name">Tono auténtico visible</span>
+            </div>
+          </div>
+
+          <!-- Tallas -->
+          <div class="option-block">
+            <span class="option-label">Selecciona tu talla</span>
+            <div id="detailSizesContainer" class="sizes-grid">
+              <!-- Renderizado de tallas S, M, L -->
+            </div>
+          </div>
+
+          <!-- Descripción y Detalles -->
+          <div class="detail-description-block">
+            <p id="detailDescText" class="detail-desc-text"></p>
+            <ul id="detailBulletsList" class="detail-bullets-list"></ul>
+          </div>
+
+          <!-- Acciones Comerciales -->
+          <div class="detail-actions">
+            <!-- Botón Consultar por WhatsApp Contextualizado -->
+            <a id="btnPrimaryWhatsApp" href="https://wa.link/5y71ui" target="_blank" rel="noopener noreferrer" class="btn-primary-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>CONSULTAR POR WHATSAPP</span>
+            </a>
+
+            <div class="detail-secondary-actions">
+              <button id="btnSecondaryCopy" type="button" class="btn-secondary-copy">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copiar info</span>
+              </button>
+
+              <button id="btnSecondaryShare" type="button" class="btn-secondary-share">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                <span>Compartir</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= DRAWER DE FILTROS ================= -->
+  <div id="filterDrawerBackdrop" class="filter-drawer-backdrop"></div>
+  <aside id="filterDrawer" class="filter-drawer" aria-label="Panel de filtros">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Filtros</h3>
+      <button id="filterDrawerCloseBtn" class="modal-close-btn" aria-label="Cerrar filtros">&times;</button>
+    </div>
+
+    <div class="drawer-content">
+      <div class="filter-group">
+        <span class="filter-group-title">Color</span>
+        <div id="filterColorsContainer" class="filter-colors-grid">
+          <!-- Renderizado dinámico de colores reales -->
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-group-title">Talla</span>
+        <div id="filterSizesContainer" class="sizes-grid">
+          <!-- Renderizado dinámico de tallas reales -->
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <button id="btnDrawerClear" class="btn-drawer-clear">Limpiar</button>
+      <button id="btnDrawerApply" class="btn-drawer-apply">Ver resultados</button>
+    </div>
+  </aside>
+
+  <!-- ================= MODAL CONFIGURACIÓN WHATSAPP ================= -->
+  <div id="configModalBackdrop" class="simple-modal-backdrop">
+    <div class="simple-modal-card">
+      <div class="modal-header-simple">
+        <h3 class="modal-title-simple">Configurar WhatsApp Oficial</h3>
+        <button id="configModalCloseBtn" class="modal-close-btn">&times;</button>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+        Línea oficial actual: <strong>+57 320 255 1542</strong> (enlace: wa.link/5y71ui). Si requieres actualizar temporalmente el número para pruebas, ingrésalo a continuación.
+      </p>
+      <div class="form-group">
+        <label for="configPhoneInput" class="form-label">Número de WhatsApp (con código de país)</label>
+        <input type="text" id="configPhoneInput" class="form-input" placeholder="573202551542" />
+      </div>
+      <button id="btnSaveConfigPhone" class="btn-drawer-apply" style="width: 100%;">Guardar número</button>
+    </div>
+  </div>
+
+  <!-- ================= TOAST CONTAINER ================= -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ================= FOOTER BOUTIQUE (4 ÁREAS) ================= -->
+  <footer id="contacto" class="footer">
+    <div class="footer-container">
+      <!-- Encabezado del Footer con Logo Oficial -->
+      <div class="footer-brand-section">
+        <img src="assets/images/branding/logo-matilda.png" alt="MATILDA Moda Femenina" class="footer-logo-img" width="64" height="64" />
+        <div class="footer-brand-text">
+          <span class="footer-brand-title">MATILDA</span>
+          <span class="footer-brand-tagline">Boutique Femenina • Ropa Femenina</span>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de 4 Áreas -->
+      <div class="footer-grid">
+        <!-- Área 1: SOBRE MATILDA -->
+        <div id="sobre-matilda" class="footer-col">
+          <h4 class="footer-col-title">Sobre MATILDA</h4>
+          <p class="footer-about-text">
+            En MATILDA nos enfocamos en ofrecer moda femenina con diseños actuales, versátiles y pensados para diferentes ocasiones. Nuestro catálogo reúne prendas de diferentes estilos, colores y siluetas para que cada mujer pueda encontrar opciones que se adapten a su personalidad y forma de vestir.
+          </p>
+          <p class="footer-about-text" style="margin-top: 10px;">
+            Trabajamos para ofrecer una experiencia de compra cercana, sencilla y práctica, permitiendo conocer nuestras prendas, consultar referencias, tallas, colores y disponibilidad de manera rápida.
+          </p>
+        </div>
+
+        <!-- Área 2: SÍGUENOS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Síguenos</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://www.facebook.com/Matildaesmoda" target="_blank" rel="noopener noreferrer" class="footer-social-item" title="Facebook de MATILDA">
+                <span class="social-icon facebook">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </span>
+                <span class="social-text">Facebook: <strong>Matildaesmoda</strong></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.link/5y71ui" target="_blank" rel="noopener noreferrer" class="footer-social-item" title="WhatsApp Oficial">
+                <span class="social-icon whatsapp">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                </span>
+                <span class="social-text">WhatsApp: <strong>Asesora Oficial</strong></span>
+              </a>
+            </li>
+            <li class="placeholder-social-row">
+              <span class="social-icon instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </span>
+              <span class="social-text">Instagram <em class="placeholder-badge">[Próximamente]</em></span>
+            </li>
+            <li class="placeholder-social-row">
+              <span class="social-icon tiktok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.27 6.27 0 0 0 1.9-4.46V8.78a8.16 8.16 0 0 0 4.87 1.62V6.95a4.85 4.85 0 0 1-1-.26z"/>
+                </svg>
+              </span>
+              <span class="social-text">TikTok <em class="placeholder-badge">[Próximamente]</em></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Área 3: ENCUÉNTRANOS / TIENDA FÍSICA -->
+        <div id="encuentranos" class="footer-col">
+          <h4 class="footer-col-title">Encuéntranos</h4>
+          <div class="store-box">
+            <span class="store-badge">MATILDA | ROPA FEMENINA</span>
+            <div class="store-address-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="store-pin-icon">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div class="store-address-text">
+                <strong>Cl. 10 # 0-51</strong><br />
+                <span>Cúcuta, Norte de Santander, Colombia</span>
+              </div>
+            </div>
+            <!-- Botón Ver Ubicación Google Maps -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Cl.+10+%23+0-51%2C+C%C3%BAcuta%2C+Norte+de+Santander%2C+Colombia" target="_blank" rel="noopener noreferrer" class="btn-location">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>VER UBICACIÓN</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Área 4: ATENCIÓN AL CLIENTE / WHATSAPP -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Atención al Cliente</h4>
+          <p class="footer-service-desc">
+            Atención personalizada de nuestras asesoras para consultas de disponibilidad, referencias, tallas y envíos.
+          </p>
+          <a href="https://wa.link/5y71ui" target="_blank" rel="noopener noreferrer" class="btn-footer-consult">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>CONSULTAR POR WHATSAPP</span>
+          </a>
+          <div class="footer-hours-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Horario: Lunes a Sábado</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie inferior -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 MATILDA | Ropa Femenina. Todos los derechos reservados. Catálogo digital comercial.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
