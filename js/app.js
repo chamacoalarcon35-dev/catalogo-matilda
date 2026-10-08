@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backToCatalogBtn: document.getElementById('backToCatalogBtn'),
     modalCloseBtn: document.getElementById('modalCloseBtn'),
     detailMainImage: document.getElementById('detailMainImage'),
+    detailThumbnailsContainer: document.getElementById('detailThumbnailsContainer'),
     detailCategoryBadge: document.getElementById('detailCategoryBadge'),
     detailTitle: document.getElementById('detailTitle'),
     detailRef: document.getElementById('detailRef'),
@@ -133,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Filtro de Búsqueda
       if (query) {
         const matchName = normalize(p.nombre).includes(query);
-        const matchRef = normalize(p.referencia).includes(query);
+        const matchRef = p.referencia ? normalize(p.referencia).includes(query) : false;
         const matchCat = normalize(p.categoria).includes(query);
         const matchColor = normalize(p.color).includes(query);
         const matchDesc = normalize(p.descripcion).includes(query);
@@ -163,6 +164,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const applyFiltersAndRender = () => {
     const filtered = getFilteredProducts();
+    // Ordenar: novedades primero (fechaCarga desc). Productos sin fechaCarga van al final.
+    filtered.sort((a, b) => {
+      const fa = a.fechaCarga || '2000-01-01';
+      const fb = b.fechaCarga || '2000-01-01';
+      if (fb > fa) return 1;
+      if (fb < fa) return -1;
+      return 0;
+    });
     renderProductGrid(filtered);
     updateFilterBadge();
     renderActiveFiltersChips();
@@ -246,11 +255,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('article');
       card.className = 'product-card';
       card.setAttribute('tabindex', '0');
-      card.setAttribute('aria-label', `${product.nombre}, Referencia ${product.referencia}`);
+      const ariaRef = product.referencia ? `, Referencia ${product.referencia}` : '';
+      card.setAttribute('aria-label', `${product.nombre}${ariaRef}`);
 
-      const sizesHtml = product.tallas 
+      const sizesHtml = (product.tallas && product.tallas.length > 0)
         ? product.tallas.map(t => `<span class="size-pill-mini">${t}</span>`).join('')
-        : '';
+        : '<span class="size-pill-mini size-pill-consult">Consultar</span>';
 
       card.innerHTML = `
         <div class="card-image-wrapper">
@@ -272,10 +282,10 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
         <div class="card-content">
-          <span class="card-ref-badge">Ref. ${product.referencia}</span>
+          ${product.referencia ? `<span class="card-ref-badge">Ref. ${product.referencia}</span>` : `<span class="card-ref-badge">Colección 2026</span>`}
           <h3 class="card-title">${product.nombre}</h3>
           <div class="card-footer">
-            <span class="card-price">${CONFIG.formatPrice(product.precio)}</span>
+            <span class="card-price">${(typeof product.precio === 'number' && product.precio > 0) ? CONFIG.formatPrice(product.precio) : 'Consultar precio'}</span>
             <div class="card-sizes">${sizesHtml}</div>
           </div>
         </div>
@@ -305,18 +315,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Actualizar URL hash para permitir compartir directamente
     if (updateHash) {
-      window.location.hash = `ref=${product.referencia}`;
+      if (product.referencia) {
+        window.location.hash = `ref=${product.referencia}`;
+      } else if (product.slug) {
+        window.location.hash = `p=${product.slug}`;
+      }
     }
 
-    // Datos principales
-    dom.detailMainImage.src = product.imagen;
+    // Imágenes y galería multi-ángulo
+    const images = (product.imagenes && product.imagenes.length > 0)
+      ? product.imagenes
+      : (product.imagen ? [product.imagen] : []);
+
+    dom.detailMainImage.src = images[0] || '';
     dom.detailMainImage.alt = product.nombre;
+
+    if (dom.detailThumbnailsContainer) {
+      dom.detailThumbnailsContainer.innerHTML = '';
+      if (images.length > 1) {
+        dom.detailThumbnailsContainer.style.display = 'flex';
+        images.forEach((imgSrc, idx) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = `detail-thumbnail-btn ${idx === 0 ? 'active' : ''}`;
+          btn.setAttribute('aria-label', `Ver foto ${idx + 1} de ${product.nombre}`);
+          btn.innerHTML = `<img src="${imgSrc}" alt="${product.nombre} ángulo ${idx + 1}" class="detail-thumbnail-img" loading="lazy" />`;
+          btn.addEventListener('click', () => {
+            dom.detailMainImage.style.opacity = '0.3';
+            setTimeout(() => {
+              dom.detailMainImage.src = imgSrc;
+              dom.detailMainImage.style.opacity = '1';
+            }, 100);
+            dom.detailThumbnailsContainer.querySelectorAll('.detail-thumbnail-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+          });
+          dom.detailThumbnailsContainer.appendChild(btn);
+        });
+      } else {
+        dom.detailThumbnailsContainer.style.display = 'none';
+      }
+    }
+
     dom.detailCategoryBadge.textContent = product.categoria;
     dom.detailTitle.textContent = product.nombre;
-    dom.detailRef.textContent = `Ref. ${product.referencia}`;
+    dom.detailRef.textContent = product.referencia ? `Ref. ${product.referencia}` : 'Ref. Por confirmar';
     
     // Disponibilidad
-    dom.detailAvailability.textContent = product.disponibilidad || 'Disponible';
+    dom.detailAvailability.textContent = product.disponibilidad || 'Consultar disponibilidad';
     if (product.disponibilidad === 'Últimas unidades') {
       dom.detailAvailability.className = 'detail-availability-badge warning';
     } else {
@@ -324,7 +369,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Precio
-    dom.detailPrice.textContent = CONFIG.formatPrice(product.precio);
+    const priceBadge = document.querySelector('.detail-price-badge');
+    if (typeof product.precio === 'number' && product.precio > 0) {
+      dom.detailPrice.textContent = CONFIG.formatPrice(product.precio);
+      if (priceBadge) priceBadge.style.display = 'inline-block';
+    } else {
+      dom.detailPrice.textContent = 'Precio por consultar';
+      if (priceBadge) priceBadge.style.display = 'none';
+    }
 
     // Color
     dom.detailColorSwatch.style.backgroundColor = product.colorHex || '#ccc';
@@ -346,6 +398,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         dom.detailSizesContainer.appendChild(btn);
       });
+    } else {
+      const pendingNote = document.createElement('span');
+      pendingNote.className = 'detail-sizes-pending';
+      pendingNote.textContent = 'Tallas disponibles por confirmar con tu asesora';
+      dom.detailSizesContainer.appendChild(pendingNote);
     }
 
     // Descripción
@@ -379,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dom.productModalBackdrop.classList.remove('active');
     document.body.style.overflow = '';
     state.currentProduct = null;
-    if (clearHash && window.location.hash.startsWith('#ref=')) {
+    if (clearHash && (window.location.hash.startsWith('#ref=') || window.location.hash.startsWith('#p='))) {
       history.pushState("", document.title, window.location.pathname + window.location.search);
     }
   };
@@ -418,10 +475,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseUrl = (window.location.origin && window.location.origin !== 'null' && !window.location.href.startsWith('file:'))
       ? `${window.location.origin}${window.location.pathname}`
       : window.location.href.split('#')[0];
-    const shareUrl = `${baseUrl}#ref=${state.currentProduct.referencia}`;
+    const hashParam = state.currentProduct.referencia 
+      ? `#ref=${state.currentProduct.referencia}` 
+      : (state.currentProduct.slug ? `#p=${state.currentProduct.slug}` : '');
+    const shareUrl = `${baseUrl}${hashParam}`;
+    const refText = state.currentProduct.referencia ? ` (Ref. ${state.currentProduct.referencia})` : '';
     const shareData = {
       title: `${state.currentProduct.nombre} | MATILDA Boutique`,
-      text: `Mira esta prenda en el catálogo de MATILDA: ${state.currentProduct.nombre} (Ref. ${state.currentProduct.referencia})`,
+      text: `Mira esta prenda en el catálogo de MATILDA: ${state.currentProduct.nombre}${refText}`,
       url: shareUrl
     };
 
@@ -670,7 +731,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash;
     if (hash && hash.startsWith('#ref=')) {
       const ref = decodeURIComponent(hash.replace('#ref=', '')).trim();
-      const product = state.products.find(p => p.referencia.toLowerCase() === ref.toLowerCase());
+      const product = state.products.find(p => p.referencia && p.referencia.toLowerCase() === ref.toLowerCase());
+      if (product) {
+        openProductModal(product, false);
+      }
+    } else if (hash && hash.startsWith('#p=')) {
+      const slug = decodeURIComponent(hash.replace('#p=', '')).trim();
+      const product = state.products.find(p => p.slug && p.slug.toLowerCase() === slug.toLowerCase());
       if (product) {
         openProductModal(product, false);
       }

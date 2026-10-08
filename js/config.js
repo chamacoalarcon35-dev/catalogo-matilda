@@ -38,12 +38,12 @@ const CONFIG = {
 
   // Plantilla para consulta contextualizada por WhatsApp
   generateWhatsAppMessage: (product, selectedSize) => {
-    const sizeText = selectedSize ? selectedSize : (product.tallas ? product.tallas.join(', ') : 'Única');
-    return `Hola, estoy interesada en el producto ${product.nombre.toUpperCase()}.
-Ref. ${product.referencia}
+    const sizeText = selectedSize ? selectedSize : (product.tallas && product.tallas.length > 0 ? product.tallas.join(', ') : 'Por confirmar');
+    const refLine = product.referencia ? `\nRef. ${product.referencia}` : '';
+    return `Hola, estoy interesada en la prenda ${product.nombre.toUpperCase()}.${refLine}
 Color: ${product.color}
 Talla: ${sizeText}
-¿Me pueden confirmar disponibilidad?`;
+¿Me pueden confirmar precio y disponibilidad?`;
   },
 
   // URL directa contextualizada hacia la asesora
@@ -55,21 +55,24 @@ Talla: ${sizeText}
 
   // Plantilla para copiar información limpia al portapapeles
   generateCleanCopyText: (product, selectedSize) => {
-    const sizeText = selectedSize ? selectedSize : (product.tallas ? product.tallas.join(', ') : 'Única');
+    const sizeText = selectedSize ? selectedSize : (product.tallas && product.tallas.length > 0 ? product.tallas.join(', ') : 'Por confirmar');
+    const refLine = product.referencia ? `Ref. ${product.referencia}\n` : '';
+    const priceLine = (typeof product.precio === 'number' && product.precio > 0)
+      ? `Precio: ${CONFIG.formatPrice(product.precio)}\n`
+      : 'Precio: Por consultar\n';
     const baseUrl = (typeof window !== 'undefined' && window.location && window.location.origin && window.location.origin !== 'null' && (!window.location.href || !window.location.href.startsWith('file:')))
       ? `${window.location.origin}${window.location.pathname || ''}`
       : (typeof window !== 'undefined' && window.location && window.location.href ? window.location.href.split('#')[0] : '');
-    const linkLine = baseUrl ? `\nCatálogo MATILDA: ${baseUrl}#ref=${product.referencia}` : '';
+    const hashRef = product.referencia ? `#ref=${product.referencia}` : (product.slug ? `#p=${product.slug}` : '');
+    const linkLine = (baseUrl && hashRef) ? `\nCatálogo MATILDA: ${baseUrl}${hashRef}` : '';
     return `${product.nombre.toUpperCase()}
-Ref. ${product.referencia}
-Precio: ${CONFIG.formatPrice(product.precio)}
-Color: ${product.color}
+${refLine}${priceLine}Color: ${product.color}
 Talla: ${sizeText}${linkLine}`;
   },
 
   // Formateador de precios en moneda local COP
   formatPrice: (amount) => {
-    if (typeof amount !== 'number') return amount;
+    if (typeof amount !== 'number' || isNaN(amount) || amount <= 0) return amount || 'Consultar precio';
     return new Intl.NumberFormat(CONFIG.currency.locale, {
       style: 'currency',
       currency: CONFIG.currency.currency,

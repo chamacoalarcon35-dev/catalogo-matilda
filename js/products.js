@@ -464,5 +464,205 @@ const PRODUCTS = [
       'Tirantes blancos contrastantes ajustables',
       'Bajo recto a la cintura'
     ]
+  },
+  {
+    id: 21,
+    slug: 'top-halter-amarillo-espalda-abierta',
+    referencia: 'CT363',
+    nombre: 'Top Halter Amarillo con Espalda Abierta',
+    categoria: 'Tops',
+    precio: 119990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.05 AM (1).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.05 AM (1).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.05 AM.jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.05 AM (2).jpeg'
+    ],
+    color: 'Amarillo',
+    colorHex: '#FCE473',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Top sin mangas con cuello cerrado en tono amarillo pastel suave. Luce un diseño femenino de espalda descubierta con detalle de lazada ajustable en la cintura posterior.',
+    detalles: [
+      'Cuello cerrado estilo halter sin mangas',
+      'Espalda descubierta con lazada posterior ajustable',
+      'Silueta entallada a la cintura',
+      'Tono amarillo pastel suave y luminoso',
+      'Tejido estructurado de caída limpia'
+    ]
+  },
+  {
+    id: 22,
+    slug: 'top-asimetrico-rosa-volantes-cascada',
+    referencia: 'CT356',
+    nombre: 'Top Asimétrico Rosa con Volantes en Cascada',
+    categoria: 'Tops',
+    precio: 149990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.05 AM (3).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.05 AM (3).jpeg'
+    ],
+    color: 'Rosa Empolvado',
+    colorHex: '#E2A9B2',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Top corto de corte asimétrico de un solo hombro en satén rosa empolvado. Destaca por su cascada arquitectónica de volantes con volumen sobre el hombro derecho.',
+    detalles: [
+      'Diseño asimétrico con hombro izquierdo libre',
+      'Volantes estructurados en cascada sobre hombro derecho',
+      'Corte entallado tipo crop top',
+      'Tono rosa empolvado característico de Matilda',
+      'Cierre lateral invisible'
+    ]
+  },
+  {
+    id: 23,
+    slug: 'vestido-corto-skater-plisado',
+    referencia: 'V218',
+    nombre: 'Vestido Corto Skater Plisado',
+    categoria: 'Vestidos',
+    precio: 154990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.06 AM (2).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.06 AM (2).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.06 AM (1).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.06 AM.jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.05 AM (4).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.06 AM (3).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.06 AM (4).jpeg'
+    ],
+    color: 'Azul Cielo',
+    colorHex: '#A4C8E1',
+    tallas: ['XS', 'S', 'M', 'L', 'XL'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Vestido corto estilo skater con cuerpo ceñido, escote recto limpio con tirantes finos y falda de tablas plisadas que aporta movimiento dinámico. Disponible en variantes de color azul cielo, rojo, negro y blanco.',
+    detalles: [
+      'Escote recto limpio con tirantes finos',
+      'Falda con tablas plisadas y vuelo estructurado',
+      'Espalda descubierta con cierre de cremallera visible',
+      'Torso ajustado con cintura definida',
+      'Disponible en azul cielo, rojo escarlata, negro y blanco'
+    ]
+  },
+  {
+    id: 24,
+    slug: 'vestido-blanco-encaje-tul-plumeti',
+    referencia: 'MD7008',
+    nombre: 'Vestido Blanco de Encaje Corsetero y Tul Plumeti',
+    categoria: 'Vestidos',
+    precio: 349990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.07 AM (1).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.07 AM (1).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.07 AM.jpeg'
+    ],
+    color: 'Blanco',
+    colorHex: '#FAF9F6',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Vestido corto romántico en tono blanco marfil con cuerpo tipo corset en encaje bordado floral y copas con soporte. Tirantes con mini volantes y falda vaporosa en tul plumeti.',
+    detalles: [
+      'Cuerpo corsetero con encaje floral y varillas de soporte',
+      'Tirantes decorados con mini volantes delicados',
+      'Falda en tul plumeti multicapa con motas bordadas',
+      'Espalda abierta con cierre invisible',
+      'Diseño romántico de inspiración coquette'
+    ]
+  },
+  {
+    id: 25,
+    slug: 'corset-blanco-balconette-estructurado',
+    referencia: 'CT361',
+    nombre: 'Corset Blanco Balconette Estructurado',
+    categoria: 'Corsets',
+    precio: 149990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.07 AM (3).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.07 AM (3).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.08 AM.jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.07 AM (2).jpeg'
+    ],
+    color: 'Blanco',
+    colorHex: '#FFFFFF',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Corset estructurado en crepé satinado blanco con copas balconette preformadas y varillas de soporte verticales. Posee bajo en pico pronunciado, cremallera dorada en la espalda y tirantes desmontables.',
+    detalles: [
+      'Copas balconette preformadas con aro de realce',
+      'Costuras de varillas verticales que esculpen la cintura',
+      'Bajo en pico pronunciado estilo corsé clásico',
+      'Cremallera metálica dorada posterior en toda la espalda',
+      'Tirantes regulables y desmontables (opción strapless)'
+    ]
+  },
+  {
+    id: 26,
+    slug: 'vestido-corto-halter-negro-plisado',
+    referencia: 'V223',
+    nombre: 'Vestido Corto Halter Negro Plisado',
+    categoria: 'Vestidos',
+    precio: 159990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.08 AM (1).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.08 AM (1).jpeg'
+    ],
+    color: 'Negro',
+    colorHex: '#1A1A1A',
+    tallas: [],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Vestido corto en color negro con escote cuadrado alto y tirantes estilo halter. Torso entallado con costuras estilizadoras y falda corta de tablas plisadas.',
+    detalles: [
+      'Escote halter cuadrado con hombros al descubierto',
+      'Corte ceñido al torso',
+      'Falda corta plisada en tablas anchas',
+      'Color negro profundo',
+      'Diseño moderno y versátil'
+    ]
+  },
+  {
+    id: 27,
+    slug: 'vestido-midi-negro-corsetero-foulard',
+    referencia: 'V222',
+    nombre: 'Vestido Midi Negro Corsetero con Foulard',
+    categoria: 'Vestidos',
+    precio: 219990,
+    imagen: 'WhatsApp Image 2026-10-07 at 10.14.08 AM (2).jpeg',
+    imagenes: [
+      'WhatsApp Image 2026-10-07 at 10.14.08 AM (2).jpeg',
+      'WhatsApp Image 2026-10-07 at 10.14.08 AM (3).jpeg'
+    ],
+    color: 'Negro',
+    colorHex: '#1A1A1A',
+    tallas: [],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-07',
+    descripcion: 'Vestido de largo midi en crepé negro estructurado. Escote palabra de honor con corsé de varillas visibles, falda evasé de caída elegante y accesorio de foulard a juego anudado al cuello con caídas en la espalda.',
+    detalles: [
+      'Escote palabra de honor strapless estructurado',
+      'Cuerpo corsetero con varillas de soporte expuestas',
+      'Falda midi con pliegues suaves y movimiento fluido',
+      'Foulard a juego anudado al cuello con caídas posteriores',
+      'Espalda con panel anatómico para ajuste óptimo'
+    ]
   }
 ];
