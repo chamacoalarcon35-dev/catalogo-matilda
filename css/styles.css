@@ -588,6 +588,22 @@ img {
   transform: scale(1.035);
 }
 
+/* ── Encuadre superior: hombros–cintura para tops y corset específicos ──
+   La imagen ocupa el doble del alto del contenedor, anclada arriba.
+   overflow:hidden del wrapper oculta la mitad inferior → solo se ve
+   la zona de hombros a cintura. No afecta a ningún otro producto. */
+.card-image-wrapper[data-ref="CT363"] > .card-image,
+.card-image-wrapper[data-ref="CT356"] > .card-image,
+.card-image-wrapper[data-ref="CT361"] > .card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .card-badge {
   position: absolute;
   top: 10px;

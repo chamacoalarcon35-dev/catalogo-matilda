@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         : '<span class="size-pill-mini size-pill-consult">Consultar</span>';
 
       card.innerHTML = `
-        <div class="card-image-wrapper">
+        <div class="card-image-wrapper" data-ref="${product.referencia || ''}">
           ${product.badge ? `<span class="card-badge">${product.badge}</span>` : ''}
           <span class="card-color-dot" style="background-color: ${product.colorHex || '#ccc'};" title="${product.color}"></span>
           <img 
@@ -273,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loading="lazy"
             width="600"
             height="800"
+            data-ref="${product.referencia || ''}"
           />
           <div class="card-hover-overlay">
             <span class="card-quick-action">
