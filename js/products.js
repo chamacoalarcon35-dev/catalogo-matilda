@@ -664,5 +664,203 @@ const PRODUCTS = [
       'Foulard a juego anudado al cuello con caídas posteriores',
       'Espalda con panel anatómico para ajuste óptimo'
     ]
+  },
+  // ─── NUEVOS PRODUCTOS OCTUBRE 2026 ────────────────────────────────────────
+  {
+    id: 28,
+    slug: 'croptop-multicolor-ct3630304131',
+    referencia: 'CT3630304131',
+    nombre: 'Croptop Multicolor Azul / Rosa / Amarillo',
+    categoria: 'Tops',
+    precio: 119990,
+    imagen: 'CT3630304131 azul.jpeg',
+    imagenes: [
+      'CT3630304131 azul.jpeg',
+      'CT3630304131 azul (2).jpeg',
+      'CT3630304131 rosado.jpeg',
+      'CT3630304131 amarillo.jpeg'
+    ],
+    color: 'Azul / Rosa / Amarillo',
+    colorHex: '#7BAFD4',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Croptop disponible en tres colores: azul, rosa y amarillo. Diseño versátil y femenino, ideal para combinar con pantalones de tiro alto o faldas. Consulta disponibilidad por color al momento de tu pedido.',
+    detalles: [
+      'Disponible en azul, rosa y amarillo',
+      'Diseño crop top con silueta entallada',
+      'Tejido cómodo y de caída limpia',
+      'Ideal para combinar con faldas o pantalones de tiro alto',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 29,
+    slug: 'vestido-jean-v2350908051',
+    referencia: 'V2350908051',
+    nombre: 'Vestido de Jean',
+    categoria: 'Vestidos',
+    precio: 154990,
+    imagen: 'V2350908051.jpg',
+    imagenes: [
+      'V2350908051.jpg'
+    ],
+    color: 'Azul Denim',
+    colorHex: '#4A6FA5',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Vestido de jean con diseño casual y femenino. Confeccionado en denim de calidad, combina comodidad y estilo en una sola prenda perfecta para el día a día.',
+    detalles: [
+      'Confeccionado en denim de calidad',
+      'Diseño femenino y versátil',
+      'Perfecto para el uso diario',
+      'Combina con tenis o sandalias',
+      'Tono azul denim clásico'
+    ]
+  },
+  {
+    id: 30,
+    slug: 'enterizo-largo-lunares-k7191503191',
+    referencia: 'K7191503191',
+    nombre: 'Enterizo Largo con Top Blanco de Lunares Negros',
+    categoria: 'Enterizos',
+    precio: 239990,
+    imagen: 'K7191503191.jpeg',
+    imagenes: [
+      'K7191503191.jpeg',
+      'K7191503191 (2).jpeg'
+    ],
+    color: 'Blanco con Lunares',
+    colorHex: '#FAF8F5',
+    tallas: ['XS', 'S', 'M'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Enterizo largo con parte superior en top blanco de lunares negros. Un diseño elegante y atemporal que combina estampado clásico de lunares con una silueta larga favorecedora.',
+    detalles: [
+      'Parte superior tipo top blanco con estampado de lunares negros',
+      'Silueta enterizo de largo completo',
+      'Diseño femenino y elegante',
+      'No disponible en talla L',
+      'Ideal para ocasiones especiales y salidas nocturnas'
+    ]
+  },
+  {
+    id: 31,
+    slug: 'enterizo-largo-negro-amarre-k7208708021',
+    referencia: 'K7208708021',
+    nombre: 'Enterizo Largo Negro con Amarre Lateral',
+    categoria: 'Enterizos',
+    precio: 284990,
+    imagen: 'K7208708021.jpeg',
+    imagenes: [
+      'K7208708021.jpeg'
+    ],
+    color: 'Negro',
+    colorHex: '#1A1A1A',
+    tallas: ['XS', 'S', 'M', 'L', 'XL'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Enterizo largo negro con detalle de amarre lateral. Diseño sofisticado y elegante que define la silueta gracias al amarre ajustable en el lateral, disponible en todas las tallas.',
+    detalles: [
+      'Amarre lateral ajustable que define la silueta',
+      'Color negro profundo y elegante',
+      'Silueta enterizo de largo completo',
+      'Disponible en todas las tallas: XS, S, M, L y XL',
+      'Perfecto para eventos y ocasiones especiales'
+    ]
+  },
+  {
+    id: 32,
+    slug: 'enterizo-negro-blanco-botones-dorados-k7191603197',
+    referencia: 'K7191603197',
+    nombre: 'Enterizo Negro con Parte Superior Blanca y Botones Dorados',
+    categoria: 'Enterizos',
+    precio: 259990,
+    imagen: 'K7191603197.jpeg',
+    imagenes: [
+      'K7191603197.jpeg'
+    ],
+    color: 'Negro / Blanco',
+    colorHex: '#1A1A1A',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Enterizo negro con parte superior blanca, detalles negros y botones dorados. Una combinación bicolor sofisticada que aporta distinción y elegancia, con la botonadura dorada como toque de lujo.',
+    detalles: [
+      'Parte superior blanca con detalles en negro',
+      'Botones dorados decorativos de acabado joya',
+      'Parte inferior en negro profundo',
+      'Diseño bicolor sofisticado y elegante',
+      'Silueta favorecedora de enterizo completo'
+    ]
+  },
+  {
+    id: 33,
+    slug: 'croptop-corset-estampado-rojo-ct3600603082',
+    referencia: 'CT3600603082',
+    nombre: 'Croptop Tipo Corset con Busto Arrunchado y Mangas — Estampado Rojo con Puntos Blancos',
+    categoria: 'Tops',
+    precio: 159990,
+    imagen: 'CT3600603082.jpeg',
+    imagenes: [
+      'CT3600603082.jpeg',
+      'CT3600603082 (2).jpeg',
+      'CT3600603082 (3).jpeg'
+    ],
+    color: 'Rojo con Puntos Blancos',
+    colorHex: '#C0392B',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Croptop tipo corset con busto arrunchado y mangas en llamativo estampado rojo con puntos blancos. Diseño estructurado que realza la figura con el detalle de fruncido en el busto.',
+    detalles: [
+      'Busto tipo corset con efecto arrunchado que realza la figura',
+      'Mangas estructuradas a juego',
+      'Estampado rojo con puntos blancos vibrante',
+      'Corte crop moderno y femenino',
+      'Tejido con cuerpo que mantiene la forma'
+    ]
+  },
+  {
+    id: 34,
+    slug: 'vestido-corto-ajustado-tirantes-k8901006191',
+    referencia: 'K8901006191',
+    nombre: 'Vestido Corto Ajustado de Tirantes',
+    categoria: 'Vestidos',
+    precio: 209990,
+    imagen: 'K8901006191 negro.jpeg',
+    imagenes: [
+      'K8901006191 negro.jpeg',
+      'K8901006191 negro (2).jpeg',
+      'K8901006191 verde.jpeg'
+    ],
+    color: 'Negro / Verde',
+    colorHex: '#1A1A1A',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-23',
+    descripcion: 'Vestido corto ajustado de tirantes con silueta ceñida y favorecedora. Se muestra en diferentes vistas y colores disponibles para consulta.',
+    detalles: [
+      'Silueta ajustada y ceñida al cuerpo',
+      'Tirantes finos estilizadores',
+      'Largo corto moderno',
+      'Disponible en negro y verde',
+      'Perfecto para salidas nocturnas y eventos'
+    ]
   }
 ];
