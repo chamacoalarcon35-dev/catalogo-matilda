@@ -670,7 +670,7 @@ const PRODUCTS = [
     id: 28,
     slug: 'croptop-multicolor-ct3630304131',
     referencia: 'CT3630304131',
-    nombre: 'Croptop Multicolor Azul / Rosa / Amarillo',
+    nombre: 'Croptop Multicolor Azul / Rosa / Amarillo / Blanco',
     categoria: 'Tops',
     precio: 119990,
     imagen: 'CT3630304131 azul.jpeg',
@@ -678,18 +678,19 @@ const PRODUCTS = [
       'CT3630304131 azul.jpeg',
       'CT3630304131 azul (2).jpeg',
       'CT3630304131 rosado.jpeg',
-      'CT3630304131 amarillo.jpeg'
+      'CT3630304131 amarillo.jpeg',
+      'CT3630304131  blanco.jpeg'
     ],
-    color: 'Azul / Rosa / Amarillo',
+    color: 'Azul / Rosa / Amarillo / Blanco',
     colorHex: '#7BAFD4',
     tallas: ['XS', 'S', 'M', 'L'],
     disponibilidad: 'Disponible',
     destacado: true,
     badge: 'NUEVA COLECCIÓN',
     fechaCarga: '2026-10-23',
-    descripcion: 'Croptop disponible en tres colores: azul, rosa y amarillo. Diseño versátil y femenino, ideal para combinar con pantalones de tiro alto o faldas. Consulta disponibilidad por color al momento de tu pedido.',
+    descripcion: 'Croptop disponible en cuatro colores: azul, rosa, amarillo y blanco. Diseño versátil y femenino, ideal para combinar con pantalones de tiro alto o faldas. Consulta disponibilidad por color al momento de tu pedido.',
     detalles: [
-      'Disponible en azul, rosa y amarillo',
+      'Disponible en azul, rosa, amarillo y blanco',
       'Diseño crop top con silueta entallada',
       'Tejido cómodo y de caída limpia',
       'Ideal para combinar con faldas o pantalones de tiro alto',
@@ -705,7 +706,9 @@ const PRODUCTS = [
     precio: 154990,
     imagen: 'V2350908051.jpg',
     imagenes: [
-      'V2350908051.jpg'
+      'V2350908051.jpg',
+      'v2350908051 azul oscuro.jpeg',
+      'v2350908051 foto acercada.jpeg'
     ],
     color: 'Azul Denim',
     colorHex: '#4A6FA5',
@@ -861,6 +864,144 @@ const PRODUCTS = [
       'Largo corto moderno',
       'Disponible en negro y verde',
       'Perfecto para salidas nocturnas y eventos'
+    ]
+  },
+  // ─── ACTUALIZACIÓN OCTUBRE 2026 (III) ────────────────────────────────────
+  {
+    id: 39,
+    slug: 'vestido-corto-jean-camisero-v236060405',
+    referencia: 'V236060405',
+    nombre: 'Vestido Corto de Jean Camisero con Botones y Volante',
+    categoria: 'Vestidos',
+    precio: 159990,
+    imagen: 'v236060405.jpeg',
+    imagenes: [
+      'v236060405.jpeg'
+    ],
+    color: 'Azul Denim',
+    colorHex: '#4A6FA5',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-30',
+    descripcion: 'Vestido corto de jean estilo camisero en denim azul medio. Presenta cuello tipo camisa, abertura frontal con botonadura completa, dos bolsillos al pecho y falda corta con volante inferior que aporta movimiento.',
+    detalles: [
+      'Cuello tipo camisa estructurado',
+      'Botonadura frontal completa en tono latón',
+      'Dos bolsillos superiores al pecho',
+      'Falda corta con volante inferior costurado',
+      'Denim azul medio de calidad con acabado clásico'
+    ]
+  },
+  // ─── ACTUALIZACIÓN OCTUBRE 2026 (II) ─────────────────────────────────────
+  {
+    id: 35,
+    slug: 'vestido-corto-blanco-fruncido-k720060608',
+    referencia: 'K720060608',
+    nombre: 'Vestido Corto Blanco con Fruncido en el Busto y Falda Asimétrica',
+    categoria: 'Vestidos',
+    precio: 219990,
+    imagen: 'k720060608.jpeg',
+    imagenes: [
+      'k720060608.jpeg',
+      'k720060608 (2).jpeg'
+    ],
+    color: 'Blanco',
+    colorHex: '#FFFFFF',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-30',
+    descripcion: 'Vestido corto de tirantes finos en tejido semitransparente blanco. Busto fruncido con detalle de nudo central y falda asimétrica con caída desigual que aporta movimiento y elegancia.',
+    detalles: [
+      'Busto fruncido con nudo central decorativo',
+      'Tirantes espagueti finos ajustables',
+      'Falda asimétrica con caída de puntas irregulares',
+      'Tejido liviano semitransparente con brillo sutil',
+      'Diseño fresco y femenino ideal para ocasiones especiales'
+    ]
+  },
+  {
+    id: 36,
+    slug: 'vestido-corto-denim-volantes-v23009080',
+    referencia: 'V23009080',
+    nombre: 'Vestido Corto de Jean con Cuerpo Estructurado y Falda con Volantes',
+    categoria: 'Vestidos',
+    precio: 169000,
+    imagen: 'v23009080.jpeg',
+    imagenes: [
+      'v23009080.jpeg'
+    ],
+    color: 'Azul Denim',
+    colorHex: '#4A6FA5',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-30',
+    descripcion: 'Vestido corto en denim azul oscuro con cuerpo estructurado y escote cuadrado con tirantes anchos tipo tirilla. Falda con dos capas de volantes en denim que aportan volumen y movimiento.',
+    detalles: [
+      'Cuerpo estructurado con escote cuadrado',
+      'Tirantes anchos tipo tirilla en denim',
+      'Falda con capas de volantes en denim costurado',
+      'Denim de calidad con acabado clásico azul oscuro',
+      'Diseño juvenil y versátil para el día a día'
+    ]
+  },
+  {
+    id: 37,
+    slug: 'vestido-midi-verde-menta-fruncido-cd22040050',
+    referencia: 'CD22040050',
+    nombre: 'Vestido Midi Verde Menta Ajustado con Fruncido y Nudo en el Busto',
+    categoria: 'Vestidos',
+    precio: 319990,
+    imagen: 'CD22040050.jpeg',
+    imagenes: [
+      'CD22040050.jpeg'
+    ],
+    color: 'Verde Menta',
+    colorHex: '#A8D8C8',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-30',
+    descripcion: 'Vestido midi ceñido en tono verde menta pastel. El cuerpo presenta un escote corazón con efecto de nudo torcido en el busto y fruncido vertical en toda la falda que moldea la silueta de forma favorecedora.',
+    detalles: [
+      'Escote corazón con detalle de nudo torcido en el busto',
+      'Fruncido vertical en toda la longitud del vestido',
+      'Tirantes espagueti finos regulables',
+      'Tejido stretch de caída suave en tono verde menta',
+      'Largo midi que estiliza la figura'
+    ]
+  },
+  {
+    id: 38,
+    slug: 'vestido-corto-rosa-fruncido-lateral-k60722',
+    referencia: 'K60722',
+    nombre: 'Vestido Corto Rosa Ajustado con Fruncido Lateral y Abertura',
+    categoria: 'Vestidos',
+    precio: 249990,
+    imagen: 'k60722.jpeg',
+    imagenes: [
+      'k60722.jpeg'
+    ],
+    color: 'Rosa',
+    colorHex: '#E8A0A8',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-10-30',
+    descripcion: 'Vestido corto ceñido en tono rosa suave con tirantes espagueti plateados de cadena fina. Presenta fruncido lateral que moldea la silueta y abertura en el bajo que aporta sensualidad y movimiento.',
+    detalles: [
+      'Tirantes espagueti de cadena fina plateada',
+      'Fruncido lateral que define y estiliza la silueta',
+      'Abertura lateral en el bajo',
+      'Tejido stretch suave en tono rosa empolvado',
+      'Diseño elegante ideal para eventos y noches especiales'
     ]
   }
 ];
