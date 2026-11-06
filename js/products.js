@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MATILDA Boutique - Catálogo Oficial de Productos
  * Contiene únicamente las prendas reales provistas en la colección fotográfica.
  * Cada prenda posee su fotografía original, referencia, color visible y detalles auténticos.
@@ -12,7 +12,7 @@ const PRODUCTS = [
     nombre: 'Corset Blanco con Encaje y Tiras Finas',
     categoria: 'Corsets',
     precio: 149990,
-    imagen: 'file-folio_32J0zwr.jpg',
+    imagen: 'imagenes/file-folio_32J0zwr.jpg',
     color: 'Blanco',
     colorHex: '#FFFFFF',
     tallas: ['S', 'M', 'L'],
@@ -35,7 +35,7 @@ const PRODUCTS = [
     nombre: 'Corset Rojo Escote Corazón Copas Drapeadas',
     categoria: 'Corsets',
     precio: 159990,
-    imagen: 'file-folio_5qB3qgk.jpg',
+    imagen: 'imagenes/file-folio_5qB3qgk.jpg',
     color: 'Rojo',
     colorHex: '#D91E2A',
     tallas: ['S', 'M', 'L'],
@@ -58,7 +58,7 @@ const PRODUCTS = [
     nombre: 'Bustier Crop Top en Encaje Floral Negro',
     categoria: 'Corsets',
     precio: 139990,
-    imagen: 'file-folio_6kEMAFn.jpg',
+    imagen: 'imagenes/file-folio_6kEMAFn.jpg',
     color: 'Negro',
     colorHex: '#1A1A1A',
     tallas: ['S', 'M', 'L'],
@@ -81,7 +81,7 @@ const PRODUCTS = [
     nombre: 'Blusa Satinada Rosa con Mangas de Doble Volante',
     categoria: 'Blusas',
     precio: 129990,
-    imagen: 'file-folio_7afbgGQ.jpeg',
+    imagen: 'imagenes/file-folio_7afbgGQ.jpeg',
     color: 'Rosa Empolvado',
     colorHex: '#E2A9B2',
     tallas: ['S', 'M', 'L'],
@@ -104,7 +104,7 @@ const PRODUCTS = [
     nombre: 'Body Seamless Cuello Redondo Tono Moka',
     categoria: 'Bodys',
     precio: 119990,
-    imagen: 'file-folio_FItPMav.jpeg',
+    imagen: 'imagenes/file-folio_FItPMav.jpeg',
     color: 'Moka',
     colorHex: '#A08068',
     tallas: ['S', 'M', 'L'],
@@ -127,7 +127,7 @@ const PRODUCTS = [
     nombre: 'Top Strapless Asimétrico con Botones Dorados',
     categoria: 'Tops',
     precio: 149990,
-    imagen: 'file-folio_FeyDfBF.jpg',
+    imagen: 'imagenes/file-folio_FeyDfBF.jpg',
     color: 'Negro',
     colorHex: '#1A1A1A',
     tallas: ['S', 'M', 'L'],
@@ -150,7 +150,7 @@ const PRODUCTS = [
     nombre: 'Corset Satinado Asimétrico con Maxi Lazo Rojo',
     categoria: 'Corsets',
     precio: 169990,
-    imagen: 'file-folio_GudCl6i.jpg',
+    imagen: 'imagenes/file-folio_GudCl6i.jpg',
     color: 'Rojo',
     colorHex: '#D91E2A',
     tallas: ['S', 'M', 'L'],
@@ -173,7 +173,7 @@ const PRODUCTS = [
     nombre: 'Bustier Clásico Negro con Copas Balconette',
     categoria: 'Corsets',
     precio: 139990,
-    imagen: 'file-folio_I2w8Bmv.jpg',
+    imagen: 'imagenes/file-folio_I2w8Bmv.jpg',
     color: 'Negro',
     colorHex: '#1A1A1A',
     tallas: ['S', 'M', 'L'],
@@ -196,7 +196,7 @@ const PRODUCTS = [
     nombre: 'Chaleco Sastre Negro con Botones Dorados Joya',
     categoria: 'Chalecos',
     precio: 149990,
-    imagen: 'file-folio_XDj4ZMw.jpg',
+    imagen: 'imagenes/file-folio_XDj4ZMw.jpg',
     color: 'Negro',
     colorHex: '#1A1A1A',
     tallas: ['S', 'M', 'L'],
@@ -219,7 +219,7 @@ const PRODUCTS = [
     nombre: 'Chaleco Corto Bordado Artesanal Blanco',
     categoria: 'Chalecos',
     precio: 139990,
-    imagen: 'file-folio_b3AdODp.jpg',
+    imagen: 'imagenes/file-folio_b3AdODp.jpg',
     color: 'Blanco',
     colorHex: '#FAF8F5',
     tallas: ['S', 'M', 'L'],
@@ -242,7 +242,7 @@ const PRODUCTS = [
     nombre: 'Body Halter Marfil con Broche Metálico Dorado',
     categoria: 'Bodys',
     precio: 129990,
-    imagen: 'file-folio_bvmain1.jpg',
+    imagen: 'imagenes/file-folio_bvmain1.jpg',
     color: 'Blanco',
     colorHex: '#FAF9F6',
     tallas: ['S', 'M', 'L'],
@@ -265,7 +265,7 @@ const PRODUCTS = [
     nombre: 'Chaleco Lino Beige con Lazos Frontales y Vivo Negro',
     categoria: 'Chalecos',
     precio: 149990,
-    imagen: 'file-folio_cr6SUxb.jpg',
+    imagen: 'imagenes/file-folio_cr6SUxb.jpg',
     color: 'Beige',
     colorHex: '#E7DFD5',
     tallas: ['S', 'M', 'L'],
@@ -288,7 +288,7 @@ const PRODUCTS = [
     nombre: 'Camisa Crop Satinada Rosa Manga Larga',
     categoria: 'Blusas',
     precio: 159990,
-    imagen: 'file-folio_hlIkq2D.jpg',
+    imagen: 'imagenes/file-folio_hlIkq2D.jpg',
     color: 'Rosa Empolvado',
     colorHex: '#E2A9B2',
     tallas: ['S', 'M', 'L'],
@@ -311,7 +311,7 @@ const PRODUCTS = [
     nombre: 'Chaleco Crema con Botones Dorados Caracol',
     categoria: 'Chalecos',
     precio: 149990,
-    imagen: 'file-folio_ipVPYdy.jpg',
+    imagen: 'imagenes/file-folio_ipVPYdy.jpg',
     color: 'Beige',
     colorHex: '#EAE5DB',
     tallas: ['S', 'M', 'L'],
@@ -334,7 +334,7 @@ const PRODUCTS = [
     nombre: 'Top Asimétrico Drapeado Un Hombro Marfil',
     categoria: 'Tops',
     precio: 129990,
-    imagen: 'file-folio_jIlLWHK.jpg',
+    imagen: 'imagenes/file-folio_jIlLWHK.jpg',
     color: 'Crema',
     colorHex: '#F7F3E9',
     tallas: ['S', 'M', 'L'],
@@ -357,7 +357,7 @@ const PRODUCTS = [
     nombre: 'Corset Negro con Encaje Blanco y Transparencias',
     categoria: 'Corsets',
     precio: 169990,
-    imagen: 'file-folio_lfukYpc.jpg',
+    imagen: 'imagenes/file-folio_lfukYpc.jpg',
     color: 'Negro',
     colorHex: '#1A1A1A',
     tallas: ['S', 'M', 'L'],
@@ -380,7 +380,7 @@ const PRODUCTS = [
     nombre: 'Corset Strapless Negro con Escote Esculpido V',
     categoria: 'Corsets',
     precio: 149990,
-    imagen: 'file-folio_qoeWQOw.jpg',
+    imagen: 'imagenes/file-folio_qoeWQOw.jpg',
     color: 'Negro',
     colorHex: '#1A1A1A',
     tallas: ['S', 'M', 'L'],
@@ -403,7 +403,7 @@ const PRODUCTS = [
     nombre: 'Top Blanco Escote Recto con Botones Joya',
     categoria: 'Tops',
     precio: 139990,
-    imagen: 'file-folio_se3lE44.jpg',
+    imagen: 'imagenes/file-folio_se3lE44.jpg',
     color: 'Blanco',
     colorHex: '#FFFFFF',
     tallas: ['S', 'M', 'L'],
@@ -426,7 +426,7 @@ const PRODUCTS = [
     nombre: 'Corset Strapless en Encaje Floral con Cremallera',
     categoria: 'Corsets',
     precio: 159990,
-    imagen: 'file-folio_vdfaR7r.jpg',
+    imagen: 'imagenes/file-folio_vdfaR7r.jpg',
     color: 'Blanco',
     colorHex: '#FFFFFF',
     tallas: ['S', 'M', 'L'],
@@ -449,7 +449,7 @@ const PRODUCTS = [
     nombre: 'Corset Moka Satinado con Varillas en Contraste',
     categoria: 'Corsets',
     precio: 159990,
-    imagen: 'file-folio_zK8WWR2.jpg',
+    imagen: 'imagenes/file-folio_zK8WWR2.jpg',
     color: 'Moka',
     colorHex: '#9E7A68',
     tallas: ['S', 'M', 'L'],
@@ -472,11 +472,11 @@ const PRODUCTS = [
     nombre: 'Top Halter Amarillo con Espalda Abierta',
     categoria: 'Tops',
     precio: 119990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.05 AM (1).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM (1).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.05 AM (1).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.05 AM.jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.05 AM (2).jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM (1).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM.jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM (2).jpeg'
     ],
     color: 'Amarillo',
     colorHex: '#FCE473',
@@ -501,9 +501,9 @@ const PRODUCTS = [
     nombre: 'Top Asimétrico Rosa con Volantes en Cascada',
     categoria: 'Tops',
     precio: 149990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.05 AM (3).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM (3).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.05 AM (3).jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM (3).jpeg'
     ],
     color: 'Rosa Empolvado',
     colorHex: '#E2A9B2',
@@ -528,14 +528,14 @@ const PRODUCTS = [
     nombre: 'Vestido Corto Skater Plisado',
     categoria: 'Vestidos',
     precio: 154990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.06 AM (2).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.06 AM (2).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.06 AM (2).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.06 AM (1).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.06 AM.jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.05 AM (4).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.06 AM (3).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.06 AM (4).jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.06 AM (2).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.06 AM (1).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.06 AM.jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.05 AM (4).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.06 AM (3).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.06 AM (4).jpeg'
     ],
     color: 'Azul Cielo',
     colorHex: '#A4C8E1',
@@ -560,10 +560,10 @@ const PRODUCTS = [
     nombre: 'Vestido Blanco de Encaje Corsetero y Tul Plumeti',
     categoria: 'Vestidos',
     precio: 349990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.07 AM (1).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.07 AM (1).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.07 AM (1).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.07 AM.jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.07 AM (1).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.07 AM.jpeg'
     ],
     color: 'Blanco',
     colorHex: '#FAF9F6',
@@ -588,11 +588,11 @@ const PRODUCTS = [
     nombre: 'Corset Blanco Balconette Estructurado',
     categoria: 'Corsets',
     precio: 149990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.07 AM (3).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.07 AM (3).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.07 AM (3).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.08 AM.jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.07 AM (2).jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.07 AM (3).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.08 AM.jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.07 AM (2).jpeg'
     ],
     color: 'Blanco',
     colorHex: '#FFFFFF',
@@ -617,9 +617,9 @@ const PRODUCTS = [
     nombre: 'Vestido Corto Halter Negro Plisado',
     categoria: 'Vestidos',
     precio: 159990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.08 AM (1).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.08 AM (1).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.08 AM (1).jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.08 AM (1).jpeg'
     ],
     color: 'Negro',
     colorHex: '#1A1A1A',
@@ -644,10 +644,10 @@ const PRODUCTS = [
     nombre: 'Vestido Midi Negro Corsetero con Foulard',
     categoria: 'Vestidos',
     precio: 219990,
-    imagen: 'WhatsApp Image 2026-10-07 at 10.14.08 AM (2).jpeg',
+    imagen: 'imagenes/WhatsApp Image 2026-10-07 at 10.14.08 AM (2).jpeg',
     imagenes: [
-      'WhatsApp Image 2026-10-07 at 10.14.08 AM (2).jpeg',
-      'WhatsApp Image 2026-10-07 at 10.14.08 AM (3).jpeg'
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.08 AM (2).jpeg',
+      'imagenes/WhatsApp Image 2026-10-07 at 10.14.08 AM (3).jpeg'
     ],
     color: 'Negro',
     colorHex: '#1A1A1A',
@@ -673,13 +673,13 @@ const PRODUCTS = [
     nombre: 'Croptop Multicolor Azul / Rosa / Amarillo / Blanco',
     categoria: 'Tops',
     precio: 119990,
-    imagen: 'CT3630304131 azul.jpeg',
+    imagen: 'imagenes/CT3630304131 azul.jpeg',
     imagenes: [
-      'CT3630304131 azul.jpeg',
-      'CT3630304131 azul (2).jpeg',
-      'CT3630304131 rosado.jpeg',
-      'CT3630304131 amarillo.jpeg',
-      'CT3630304131  blanco.jpeg'
+      'imagenes/CT3630304131 azul.jpeg',
+      'imagenes/CT3630304131 azul (2).jpeg',
+      'imagenes/CT3630304131 rosado.jpeg',
+      'imagenes/CT3630304131 amarillo.jpeg',
+      'imagenes/CT3630304131  blanco.jpeg'
     ],
     color: 'Azul / Rosa / Amarillo / Blanco',
     colorHex: '#7BAFD4',
@@ -704,11 +704,11 @@ const PRODUCTS = [
     nombre: 'Vestido de Jean',
     categoria: 'Vestidos',
     precio: 154990,
-    imagen: 'V2350908051.jpg',
+    imagen: 'imagenes/V2350908051.jpg',
     imagenes: [
-      'V2350908051.jpg',
-      'v2350908051 azul oscuro.jpeg',
-      'v2350908051 foto acercada.jpeg'
+      'imagenes/V2350908051.jpg',
+      'imagenes/v2350908051 azul oscuro.jpeg',
+      'imagenes/v2350908051 foto acercada.jpeg'
     ],
     color: 'Azul Denim',
     colorHex: '#4A6FA5',
@@ -733,10 +733,10 @@ const PRODUCTS = [
     nombre: 'Enterizo Largo con Top Blanco de Lunares Negros',
     categoria: 'Enterizos',
     precio: 239990,
-    imagen: 'K7191503191.jpeg',
+    imagen: 'imagenes/K7191503191.jpeg',
     imagenes: [
-      'K7191503191.jpeg',
-      'K7191503191 (2).jpeg'
+      'imagenes/K7191503191.jpeg',
+      'imagenes/K7191503191 (2).jpeg'
     ],
     color: 'Blanco con Lunares',
     colorHex: '#FAF8F5',
@@ -761,9 +761,9 @@ const PRODUCTS = [
     nombre: 'Enterizo Largo Negro con Amarre Lateral',
     categoria: 'Enterizos',
     precio: 284990,
-    imagen: 'K7208708021.jpeg',
+    imagen: 'imagenes/K7208708021.jpeg',
     imagenes: [
-      'K7208708021.jpeg'
+      'imagenes/K7208708021.jpeg'
     ],
     color: 'Negro',
     colorHex: '#1A1A1A',
@@ -788,9 +788,9 @@ const PRODUCTS = [
     nombre: 'Enterizo Negro con Parte Superior Blanca y Botones Dorados',
     categoria: 'Enterizos',
     precio: 259990,
-    imagen: 'K7191603197.jpeg',
+    imagen: 'imagenes/K7191603197.jpeg',
     imagenes: [
-      'K7191603197.jpeg'
+      'imagenes/K7191603197.jpeg'
     ],
     color: 'Negro / Blanco',
     colorHex: '#1A1A1A',
@@ -815,11 +815,11 @@ const PRODUCTS = [
     nombre: 'Croptop Tipo Corset con Busto Arrunchado y Mangas — Estampado Rojo con Puntos Blancos',
     categoria: 'Tops',
     precio: 159990,
-    imagen: 'CT3600603082.jpeg',
+    imagen: 'imagenes/CT3600603082.jpeg',
     imagenes: [
-      'CT3600603082.jpeg',
-      'CT3600603082 (2).jpeg',
-      'CT3600603082 (3).jpeg'
+      'imagenes/CT3600603082.jpeg',
+      'imagenes/CT3600603082 (2).jpeg',
+      'imagenes/CT3600603082 (3).jpeg'
     ],
     color: 'Rojo con Puntos Blancos',
     colorHex: '#C0392B',
@@ -844,11 +844,11 @@ const PRODUCTS = [
     nombre: 'Vestido Corto Ajustado de Tirantes',
     categoria: 'Vestidos',
     precio: 209990,
-    imagen: 'K8901006191 negro.jpeg',
+    imagen: 'imagenes/K8901006191 negro.jpeg',
     imagenes: [
-      'K8901006191 negro.jpeg',
-      'K8901006191 negro (2).jpeg',
-      'K8901006191 verde.jpeg'
+      'imagenes/K8901006191 negro.jpeg',
+      'imagenes/K8901006191 negro (2).jpeg',
+      'imagenes/K8901006191 verde.jpeg'
     ],
     color: 'Negro / Verde',
     colorHex: '#1A1A1A',
@@ -874,9 +874,9 @@ const PRODUCTS = [
     nombre: 'Vestido Corto de Jean Camisero con Botones y Volante',
     categoria: 'Vestidos',
     precio: 159990,
-    imagen: 'v236060405.jpeg',
+    imagen: 'imagenes/v236060405.jpeg',
     imagenes: [
-      'v236060405.jpeg'
+      'imagenes/v236060405.jpeg'
     ],
     color: 'Azul Denim',
     colorHex: '#4A6FA5',
@@ -902,10 +902,10 @@ const PRODUCTS = [
     nombre: 'Vestido Corto Blanco con Fruncido en el Busto y Falda Asimétrica',
     categoria: 'Vestidos',
     precio: 219990,
-    imagen: 'k720060608.jpeg',
+    imagen: 'imagenes/k720060608.jpeg',
     imagenes: [
-      'k720060608.jpeg',
-      'k720060608 (2).jpeg'
+      'imagenes/k720060608.jpeg',
+      'imagenes/k720060608 (2).jpeg'
     ],
     color: 'Blanco',
     colorHex: '#FFFFFF',
@@ -930,9 +930,9 @@ const PRODUCTS = [
     nombre: 'Vestido Corto de Jean con Cuerpo Estructurado y Falda con Volantes',
     categoria: 'Vestidos',
     precio: 169000,
-    imagen: 'v23009080.jpeg',
+    imagen: 'imagenes/v23009080.jpeg',
     imagenes: [
-      'v23009080.jpeg'
+      'imagenes/v23009080.jpeg'
     ],
     color: 'Azul Denim',
     colorHex: '#4A6FA5',
@@ -957,9 +957,9 @@ const PRODUCTS = [
     nombre: 'Vestido Midi Verde Menta Ajustado con Fruncido y Nudo en el Busto',
     categoria: 'Vestidos',
     precio: 319990,
-    imagen: 'CD22040050.jpeg',
+    imagen: 'imagenes/CD22040050.jpeg',
     imagenes: [
-      'CD22040050.jpeg'
+      'imagenes/CD22040050.jpeg'
     ],
     color: 'Verde Menta',
     colorHex: '#A8D8C8',
@@ -984,9 +984,9 @@ const PRODUCTS = [
     nombre: 'Vestido Corto Rosa Ajustado con Fruncido Lateral y Abertura',
     categoria: 'Vestidos',
     precio: 249990,
-    imagen: 'k60722.jpeg',
+    imagen: 'imagenes/k60722.jpeg',
     imagenes: [
-      'k60722.jpeg'
+      'imagenes/k60722.jpeg'
     ],
     color: 'Rosa',
     colorHex: '#E8A0A8',
@@ -1003,5 +1003,213 @@ const PRODUCTS = [
       'Tejido stretch suave en tono rosa empolvado',
       'Diseño elegante ideal para eventos y noches especiales'
     ]
+  },
+  // ─── ACTUALIZACIÓN NOVIEMBRE 2026 ────────────────────────────────────────
+  {
+    id: 40,
+    slug: 'top-bicolor-blanco-azul-11989',
+    referencia: '11989',
+    nombre: 'Top Bicolor Disponible en Blanco y Azul',
+    categoria: 'Tops',
+    precio: 199990,
+    imagen: 'imagenes/11989  blanco .jpeg',
+    imagenes: [
+      'imagenes/11989  blanco .jpeg',
+      'imagenes/11989 azul .jpeg'
+    ],
+    color: 'Blanco / Azul',
+    colorHex: '#FFFFFF',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Top disponible en dos colores: blanco y azul. Diseño femenino y versátil con acabado limpio y silueta favorecedor. Consulta disponibilidad del color de tu preferencia al momento de tu pedido.',
+    detalles: [
+      'Disponible en color blanco y azul',
+      'Diseño de silueta femenina y entallada',
+      'Tejido de caída suave y confortable',
+      'Ideal para combinar con pantalones o faldas',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 41,
+    slug: 'top-multicolor-negro-rosado-12347',
+    referencia: '12347',
+    nombre: 'Top Multicolor Negro y Rosado con Detalle en Espalda',
+    categoria: 'Tops',
+    precio: 149990,
+    imagen: 'imagenes/12347 negro .jpeg',
+    imagenes: [
+      'imagenes/12347 negro .jpeg',
+      'imagenes/12347 rosado .jpeg',
+      'imagenes/12347 rosado espalda.jpeg'
+    ],
+    color: 'Negro / Rosado',
+    colorHex: '#1A1A1A',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Top disponible en negro y rosado con detalle en la espalda. Diseño moderno y femenino con acabados cuidados. Se incluyen vistas frontal y posterior del color rosado para apreciar el detalle trasero.',
+    detalles: [
+      'Disponible en color negro y rosado',
+      'Vista frontal y posterior del color rosado',
+      'Detalle decorativo en la espalda',
+      'Silueta entallada y favorecedora',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 42,
+    slug: 'top-bicolor-negro-rojo-bd022',
+    referencia: 'BD022',
+    nombre: 'Top Disponible en Negro y Rojo',
+    categoria: 'Tops',
+    precio: 119990,
+    imagen: 'imagenes/BD022 negro.jpeg',
+    imagenes: [
+      'imagenes/BD022 negro.jpeg',
+      'imagenes/BD022 rojo.jpeg',
+      'imagenes/BD022 rojo (2).jpeg'
+    ],
+    color: 'Negro / Rojo',
+    colorHex: '#1A1A1A',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Top disponible en negro y rojo con dos vistas del color rojo para apreciar el diseño completo. Prenda versátil y femenina perfecta para múltiples ocasiones.',
+    detalles: [
+      'Disponible en color negro y rojo',
+      'Dos vistas del color rojo para mejor apreciación',
+      'Diseño versátil y femenino',
+      'Tejido cómodo y de buena caída',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 43,
+    slug: 'top-multicolor-blanco-dorado-negro-ct370062',
+    referencia: 'CT370062',
+    nombre: 'Top Multicolor Blanco, Dorado y Negro con Vista Espalda',
+    categoria: 'Tops',
+    precio: 99990,
+    imagen: 'imagenes/ct370062 blanco .jpeg',
+    imagenes: [
+      'imagenes/ct370062 blanco .jpeg',
+      'imagenes/ct370062 blanco espalda .jpeg',
+      'imagenes/ct370062 dorado .jpeg',
+      'imagenes/ct370062 negro .jpeg'
+    ],
+    color: 'Blanco / Dorado / Negro',
+    colorHex: '#FFFFFF',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Top disponible en tres colores: blanco, dorado y negro, con vista frontal y posterior del color blanco. Diseño femenino con detalle en la espalda visible en las fotografías.',
+    detalles: [
+      'Disponible en blanco, dorado y negro',
+      'Vista frontal y posterior del color blanco',
+      'Detalle en la espalda visible en galería',
+      'Tres opciones de color para elegir',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 44,
+    slug: 'conjunto-multicolor-amarillo-negro-rojo-k607380',
+    referencia: 'K607380',
+    nombre: 'Conjunto Multicolor Amarillo, Negro y Rojo con Vista Espalda',
+    categoria: 'Conjuntos',
+    precio: 269990,
+    imagen: 'imagenes/k607380 amarillo .jpeg',
+    imagenes: [
+      'imagenes/k607380 amarillo .jpeg',
+      'imagenes/k607380 negro .jpeg',
+      'imagenes/k607380 negro espalda.jpeg',
+      'imagenes/k607380 rojo.jpg',
+      'imagenes/k607380 rojo espalda.jpg'
+    ],
+    color: 'Amarillo / Negro / Rojo',
+    colorHex: '#F4D03F',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Conjunto disponible en amarillo, negro y rojo, con vistas frontales y posteriores del negro y el rojo para apreciar el diseño completo. Prendas coordinadas con diseño femenino y versátil.',
+    detalles: [
+      'Disponible en amarillo, negro y rojo',
+      'Vistas frontal y posterior de negro y rojo',
+      'Diseño de conjunto coordinado',
+      'Prenda femenina y versátil',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 45,
+    slug: 'top-vino-tinto-k618930',
+    referencia: 'K618930',
+    nombre: 'Top Vino Tinto con Vista Frontal y Posterior',
+    categoria: 'Tops',
+    precio: 269990,
+    imagen: 'imagenes/k618930.jpeg',
+    imagenes: [
+      'imagenes/k618930.jpeg',
+      'imagenes/k618930 espalda.jpeg'
+    ],
+    color: 'Vino Tinto',
+    colorHex: '#722F37',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Top en color vino tinto con vistas frontal y posterior para apreciar el diseño completo de la prenda. Tono oscuro y elegante que se adapta a múltiples ocasiones.',
+    detalles: [
+      'Color vino tinto profundo y elegante',
+      'Vista frontal y posterior de la prenda',
+      'Diseño con detalle en la espalda',
+      'Disponible en tallas XS, S, M y L',
+      'Consulta disponibilidad por WhatsApp'
+    ]
+  },
+  {
+    id: 46,
+    slug: 'top-bicolor-blanco-rosado-v234090',
+    referencia: 'V234090',
+    nombre: 'Top Bicolor Blanco y Rosado con Vista Espalda',
+    categoria: 'Tops',
+    precio: 174990,
+    imagen: 'imagenes/v234090  blanco .jpeg',
+    imagenes: [
+      'imagenes/v234090  blanco .jpeg',
+      'imagenes/v234090 rosado .jpeg',
+      'imagenes/v234090 rosado espalda .jpeg'
+    ],
+    color: 'Blanco / Rosado',
+    colorHex: '#FAF9F6',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-06',
+    descripcion: 'Top disponible en blanco y rosado, con vistas frontal y posterior del color rosado para apreciar el detalle en la espalda. Diseño femenino y elegante, perfecto para múltiples looks.',
+    detalles: [
+      'Disponible en color blanco y rosado',
+      'Vista frontal y posterior del color rosado',
+      'Detalle en la espalda visible en galería',
+      'Diseño femenino de silueta favorecedora',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
   }
 ];
+
+
+
