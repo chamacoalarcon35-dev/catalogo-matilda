@@ -876,9 +876,10 @@ const PRODUCTS = [
     precio: 159990,
     imagen: 'imagenes/v236060405.jpeg',
     imagenes: [
-      'imagenes/v236060405.jpeg'
+      'imagenes/v236060405.jpeg',
+      'imagenes/v236060 claro.jpeg'
     ],
-    color: 'Azul Denim',
+    color: 'Azul Denim / Claro',
     colorHex: '#4A6FA5',
     tallas: ['XS', 'S', 'M', 'L'],
     disponibilidad: 'Disponible',
@@ -1206,6 +1207,176 @@ const PRODUCTS = [
       'Vista frontal y posterior del color rosado',
       'Detalle en la espalda visible en galería',
       'Diseño femenino de silueta favorecedora',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  }
+,
+  // ─── ACTUALIZACIÓN NOVIEMBRE 2026 (II) ───────────────────────────────────
+  {
+    id: 47,
+    slug: 'top-halter-0650608',
+    referencia: '0650608',
+    nombre: 'Top Halter con Detalle Frontal',
+    categoria: 'Tops',
+    precio: 169990,
+    imagen: 'imagenes/0650608.jpeg',
+    imagenes: [
+      'imagenes/0650608.jpeg'
+    ],
+    color: 'Disponible',
+    colorHex: '#A0A0A0',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-18',
+    descripcion: 'Top de diseño elegante con detalle frontal y silueta favorecedora. Prenda versátil ideal para múltiples ocasiones. Consulta disponibilidad de colores y tallas al momento de tu pedido.',
+    detalles: [
+      'Diseño femenino con detalle frontal',
+      'Silueta entallada y favorecedora',
+      'Tejido de caída suave',
+      'Ideal para combinar con pantalones o faldas de tiro alto',
+      'Consulta disponibilidad por WhatsApp'
+    ]
+  },
+  {
+    id: 48,
+    slug: 'top-1249403',
+    referencia: '1249403',
+    nombre: 'Top Femenino con Detalle en Escote',
+    categoria: 'Tops',
+    precio: 129990,
+    imagen: 'imagenes/1249403.jpeg',
+    imagenes: [
+      'imagenes/1249403.jpeg',
+      'imagenes/1249403 (2).jpeg'
+    ],
+    color: 'Disponible',
+    colorHex: '#A0A0A0',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-18',
+    descripcion: 'Top femenino con detalle en el escote y silueta moderna. Dos fotografías permiten apreciar el diseño desde diferentes ángulos. Consulta disponibilidad al momento de tu pedido.',
+    detalles: [
+      'Diseño femenino con detalle en el escote',
+      'Silueta moderna y entallada',
+      'Tejido de buena caída',
+      'Galería con dos vistas de la prenda',
+      'Consulta disponibilidad por WhatsApp'
+    ]
+  },
+  {
+    id: 49,
+    slug: 'top-b173030',
+    referencia: 'B173030',
+    nombre: 'Top Elegante de Silueta Definida',
+    categoria: 'Tops',
+    precio: 129990,
+    imagen: 'imagenes/B173030.jpeg',
+    imagenes: [
+      'imagenes/B173030.jpeg'
+    ],
+    color: 'Disponible',
+    colorHex: '#A0A0A0',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: false,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-18',
+    descripcion: 'Top de diseño elegante con silueta definida y acabados cuidados. Prenda femenina y versátil perfecta para múltiples looks. Consulta disponibilidad de tallas al momento de tu pedido.',
+    detalles: [
+      'Diseño elegante con silueta definida',
+      'Acabados cuidados y femeninos',
+      'Tejido de caída suave',
+      'Prenda versátil para múltiples looks',
+      'Consulta disponibilidad por WhatsApp'
+    ]
+  },
+  {
+    id: 50,
+    slug: 'top-bicolor-blanco-negro-e180032',
+    referencia: 'E180032',
+    nombre: 'Top Disponible en Blanco y Negro',
+    categoria: 'Tops',
+    precio: 189990,
+    imagen: 'imagenes/E180032 blanco.jpeg',
+    imagenes: [
+      'imagenes/E180032 blanco.jpeg',
+      'imagenes/E180032 negro.jpeg'
+    ],
+    color: 'Blanco / Negro',
+    colorHex: '#FFFFFF',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-18',
+    descripcion: 'Top disponible en dos colores: blanco y negro. Ambas variantes se muestran en la galería para que puedas apreciar el diseño en cada tono. Consulta disponibilidad del color de tu preferencia al momento del pedido.',
+    detalles: [
+      'Disponible en color blanco y negro',
+      'Galería con fotografía de cada variante de color',
+      'Diseño femenino y de silueta favorecedora',
+      'Tejido de caída suave y confortable',
+      'Consulta disponibilidad del color de tu preferencia'
+    ]
+  },
+  {
+    id: 51,
+    slug: 'top-k619890',
+    referencia: 'K619890',
+    nombre: 'Top con Vista Frontal y Posterior',
+    categoria: 'Tops',
+    precio: 194990,
+    imagen: 'imagenes/k619890.jpeg',
+    imagenes: [
+      'imagenes/k619890.jpeg',
+      'imagenes/k619890 (2).jpeg'
+    ],
+    color: 'Disponible',
+    colorHex: '#A0A0A0',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-18',
+    descripcion: 'Top femenino con galería que incluye vista frontal y adicional para apreciar el diseño completo de la prenda. Silueta favorecida y acabados de calidad. Consulta disponibilidad al momento de tu pedido.',
+    detalles: [
+      'Galería con dos vistas de la prenda',
+      'Diseño femenino y de silueta favorecedora',
+      'Acabados de calidad',
+      'Tejido cómodo y de caída suave',
+      'Consulta disponibilidad por WhatsApp'
+    ]
+  },
+  {
+    id: 52,
+    slug: 'conjunto-bicolor-amarillo-marron-k620720',
+    referencia: 'K620720',
+    nombre: 'Conjunto Disponible en Amarillo y Marrón',
+    categoria: 'Conjuntos',
+    precio: 289990,
+    imagen: 'imagenes/k620720 amarillo.jpeg',
+    imagenes: [
+      'imagenes/k620720 amarillo.jpeg',
+      'imagenes/k620720 amarillo (2).jpeg',
+      'imagenes/k620720 marron.jpeg',
+      'imagenes/k620720 marron (2).jpeg'
+    ],
+    color: 'Amarillo / Marrón',
+    colorHex: '#F4D03F',
+    tallas: ['XS', 'S', 'M', 'L'],
+    disponibilidad: 'Disponible',
+    destacado: true,
+    badge: 'NUEVA COLECCIÓN',
+    fechaCarga: '2026-11-18',
+    descripcion: 'Conjunto disponible en dos colores: amarillo y marrón. La galería incluye dos fotografías de cada variante para que puedas apreciar el diseño y los tonos con detalle. Consulta disponibilidad del color de tu preferencia.',
+    detalles: [
+      'Disponible en color amarillo y marrón',
+      'Dos fotografías de cada variante de color en galería',
+      'Diseño de conjunto coordinado femenino',
+      'Prenda versátil y elegante',
       'Consulta disponibilidad del color de tu preferencia'
     ]
   }
